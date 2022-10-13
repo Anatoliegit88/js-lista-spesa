@@ -7,10 +7,18 @@
 
 // creare la lista
 const list = ["frutta", "verdura", "carne", "pesce", "pane", "aqua"];
-
 // stampare la lista
+//dichiarare variabile contatore
 let i = 0;
+let listElement = " ";
+// condizione di uscita
 while (i < list.length) {
-  console.log(list[i]);
+  // i<6
+  // dopo ogni esecuzione di while, aggiungere nella variabile
+  // listElement un elemento dell'array alla lista spesa
+  listElement += "<li>" + list[i] + "</li>";
   i++;
+  console.log(listElement);
 }
+// stampare output
+document.getElementById("lista-spesa").innerHTML = listElement;
